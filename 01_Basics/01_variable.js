@@ -3,6 +3,13 @@ let AccounEmail = "ankit@gmail.com"
 var Password = "12345"
 accountCity = "Jaipur"
 
+/*
+var => old way(before 2015), declare this variable again and again without any error, it is function Scoped-global scope.
+
+let => modern variable, value reassign but not redeclare. it is Block scoped- access between curly{} bracess.
+
+const => can't reassigned or redeclare. it is block scoped..
+*/
 accountId = 2;// not Allowed to Assign Again...
 
 AccounEmail ="qweeed@gmail.com";
