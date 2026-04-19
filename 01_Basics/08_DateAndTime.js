@@ -25,11 +25,25 @@ let MyDate = new Date();
 // console.log(newDate.getDay()); // 0 = sunday
 // console.log(newDate.getUTCDay()); // 0 = sunday
 
- let newDate = new Date();
- let hour = newDate.getHours();
- let minutes = newDate.getMinutes();
- let seconds = newDate.getSeconds();
+//  let newDate = new Date();
+//  let hour = newDate.getHours();
+//  let minutes = newDate.getMinutes();
+//  let seconds = newDate.getSeconds();
 
- let fullTime = `${hour}:${minutes}:${seconds}`;
-  console.log(fullTime);
+//  let fullTime = `${hour}:${minutes}:${seconds}`;
+//   console.log(fullTime);
 
+// node 01_Basics/08_DateAndTime.js
+
+
+let newDate = new Date();
+
+console.log(newDate.toLocaleString('en-IN', {
+    weekday: "long",
+    month: "long",
+     year: "numeric",
+    hour: "2-digit",    
+    minute: "2-digit",  
+    second: "2-digit",  
+    timeZone: "Asia/Kolkata"
+}));
